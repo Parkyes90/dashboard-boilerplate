@@ -32,6 +32,12 @@
     "react": {
       "pragma": "React",
       "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["node_modules", "src"]
+      }
     }
   },
   "parser": "@typescript-eslint/parser"

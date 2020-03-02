@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import { CssBaseline } from '@material-ui/core';
+import { CssBaseline, LinearProgress } from '@material-ui/core';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-    <CssBaseline />
-  </BrowserRouter>,
+  <Suspense fallback={<LinearProgress />}>
+    <BrowserRouter>
+      <App />
+      <CssBaseline />
+    </BrowserRouter>
+  </Suspense>,
   document.getElementById('root'),
 );
 
