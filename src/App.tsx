@@ -4,7 +4,10 @@ import { Switch, Route } from 'react-router-dom';
 function App(): ReactElement {
   return (
     <Switch>
-      <Route path="/main" component={(): ReactElement => <div>Main</div>} />
+      <Route
+        path="/main"
+        component={lazy(() => import('components/pages/Main'))}
+      />
       <Route
         path="/sign-in"
         component={lazy(() => import('components/pages/SignIn'))}
