@@ -16,12 +16,12 @@
     "typescript": "^3.7.5"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=3500 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "eslint": "eslint --ext .js,.jsx,.ts,.tsx ./",
-    "eslint:fix": "eslint --ext .js,.jsx,.ts,.tsx ./ --fix"
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx ./",
+    "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx ./ --fix"
   },
   "eslintConfig": {
     "extends": "react-app"
